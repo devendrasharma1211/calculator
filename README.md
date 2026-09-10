@@ -16,6 +16,6 @@ This project demonstrates core JavaScript concepts such as DOM manipulation, eve
 - JavaScript (ES6)
 
 ## 📦 Installation
-1. Clone the repository:
+1. Clone the repository:-
    ```bash
    git clone https://github.com/your-username/calculator.git
