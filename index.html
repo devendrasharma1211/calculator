@@ -20,6 +20,8 @@
 			width: 100%;
 			display: inline-block;
 			padding-top: 15px;
+			text-align:center;
+			background-color: #e9ecef; 
 		}
 		.button-block > button {
 			min-width: 100px;
@@ -32,13 +34,16 @@
 			display: inline-block;
 			background-color: gray;
 		}
+		#displaydata {
+			width:300px;
+		}
 	</style>
 </head>
 
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-5">
+			<div class="col-4 offset-4">
 				<div class="button-block">
 					<button class="btn btn-primary" onclick="appendNum('1')">1</button>
 					<button class="btn btn-primary" onclick="appendNum('2')">2</button>
@@ -51,8 +56,6 @@
 					<button class="btn btn-primary" onclick="appendNum('9')">9</button>
 					<button class="btn btn-primary" onclick="appendNum('0')">0</button>
 				</div>
-			</div>
-			<div class="col-5">
 				<div class="button-block">
 					<button class="btn btn-primary" onclick="appendOperator('+')">+</button>
 					<button class="btn btn-primary" onclick="appendOperator('-')">-</button>
@@ -62,10 +65,8 @@
 					<button class="btn btn-primary" onclick="calculate()">=</button>
 					<button class="btn btn-primary" onclick="clearData()">Clear</button>
 				</div>
-			</div>
-			<div class="col-2">
-				<div class="output-block">
-					<h3>Output Here</h3>
+				<div class="output-block pb-4">
+					<h3>Output</h3>
 					<input type="text" id="displaydata" readonly/>
 				</div>
 			</div>
